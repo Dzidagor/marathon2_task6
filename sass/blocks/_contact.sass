@@ -1,0 +1,91 @@
+.contact
+  // .contact__block
+  &__block
+    max-width: 1280px
+    margin: auto
+    display: flex
+    justify-content: space-between
+  // .contact__content-block
+  &__content-block
+    padding-top: 50px
+  // .contact__form-block
+  &__form-block
+    width: 50%
+    background-color: $firm
+.contact-block
+  // .contact-block__title
+  &__title
+    @extend %h1
+    color: $firm
+    position: relative
+    display: inline-block
+    margin-bottom: 50px
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: -90px
+      width: 80px
+      height: 3px
+      background-color: $firm
+      transform: translateY(-50%)
+  // .contact-block__item
+  &__item
+    margin-bottom: 20px
+  // .contact-block__text
+  &__text
+    @extend %txt1
+    color: $black
+    line-height: 27px
+    // .contact-block__text_accent
+    &_accent
+      color: $accent
+.form
+  padding: 50px 75px
+  display: flex
+  flex-flow: column
+  align-items: center
+  // .form__title
+  &__title
+    @extend %h1
+    color: $light
+    position: relative
+    display: inline-block
+    margin-bottom: 15px
+    margin-right: 70px
+    text-transform: uppercase
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: -90px
+      width: 80px
+      height: 3px
+      background-color: $light
+      transform: translateY(-50%)
+  // .form__group
+  &__group
+    display: flex
+    text-align: center
+    align-items: center
+    justify-content: center
+    margin-bottom: 10px
+  // .form__control
+  &__control
+    @extend %txt1
+    background-color: $firm
+    color: $light
+    width: 450px
+    height: 75px
+    border: 1px solid $light
+    background-color: $firm
+    text-align: center
+    &::placeholder
+      color: $grey
+      text-align: center
+  // .form__btn-sbmt
+  &__btn-sbmt
+    margin-top: 70px
+    text-transform: uppercase
+
+
