@@ -1,0 +1,35 @@
+%h0
+  font-family: 'Oswald', sans-serif
+  font-weight: 400
+  font-size: 72px
+
+%h1
+  font-family: 'Oswald', sans-serif
+  font-weight: 400
+  font-size: 36px
+
+%h2
+  font-family: 'Oswald', sans-serif
+  font-weight: 300
+  font-size: 24px
+
+%btn
+  font-family: 'Oswald', sans-serif
+  font-weight: 300
+  font-size: 14px
+
+%txt1
+  font-family: 'Oswald', sans-serif
+  font-weight: 300
+  font-size: 18px
+
+.button
+  display: inline-block
+  @extend %btn
+  padding: 15px 55px
+  color: $light
+  background-color: $accent
+  transition: background-color 0.3s ease, color 0.3s ease
+  &:hover
+    color: $accent
+    background-color: $light

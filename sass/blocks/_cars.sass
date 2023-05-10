@@ -1,0 +1,75 @@
+.cars
+  // .cars__block
+  &__block
+    max-width: 1280px
+    margin: auto
+    padding-bottom: 100px
+  // .cars__title
+  &__title
+    @extend %h1
+    color: $firm
+    margin-bottom: 50px
+    position: relative
+    display: inline-block
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: -90px
+      width: 80px
+      height: 3px
+      background-color: $firm
+      transform: translateY(-50%)
+  // .cars__slider
+  &__slider
+    padding-bottom: 60px
+  // .cars__item
+  &__item
+    border: 1px solid $grey
+    padding: 6px
+    display: flex
+    flex-flow: column
+    align-items: center
+    // .cars__item_active
+    &_active
+      transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out
+      background-color: $accent
+      border-color: $accent
+      .cars__item-title
+        color: $light
+        transition: color 0.3s ease-in-out
+      .cars__item-subtitle
+        color: $light
+        transition: color 0.3s ease-in-out
+
+  
+  // .cars__img
+  &__img
+  // .cars__item-title
+  &__item-title
+    @extend %txt1
+    margin-top: 20px
+    margin-bottom: 5px
+    color: $black
+  // .cars__item-subtitle
+  &__item-subtitle
+    @extend %txt1
+    color: $black
+    margin-bottom: 5px
+
+.swiper-pagination 
+  position: relative
+  transform: translateY(45px)
+
+.swiper-pagination-bullet 
+  width: 50px !important
+  height: 3px !important
+  background-color: $grey !important
+  border-radius: 0 !important
+  margin: 0 20px !important
+    
+
+.swiper-pagination-bullet-active 
+    background-color: $accent !important
+
+

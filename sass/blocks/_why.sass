@@ -1,0 +1,63 @@
+.why
+  // .why__block
+  &__block
+    max-width: 1280px
+    margin: auto
+    display: flex
+    padding-bottom: 100px
+  // .why__car-block
+  &__car-block
+    padding-right: 100px
+  // .why__car-img
+  &__car-img
+
+  // .why__content-block
+  &__content-block
+    flex-grow: 1
+  // .why__title
+  &__title
+    padding-left: 180px
+    @extend %h1
+    color: $firm
+    position: relative
+    display: inline-block
+    margin-bottom: 50px
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: -90px
+      width: 80px
+      height: 3px
+      background-color: $firm
+      transform: translateY(-50%)
+  // .why__content
+  &__content
+    background-color: $firm
+    padding-left: 180px
+    padding-bottom: 50px
+    padding-top: 1px
+.why-content
+
+  // .why-content__item
+  &__item
+    margin-top: 20px
+  // .why-content__title
+  &__title
+    @extend %h1
+    color: $light
+    display: block
+  // .why-content__subtitle
+  &__subtitle
+    @extend %h2
+    color: $light
+    display: block
+    line-height: 36px
+  // .why-content__text
+  &__text
+    display: block
+    @extend %txt1
+    color: $grey
+    max-width: 320px
+    line-height: 27px
+
